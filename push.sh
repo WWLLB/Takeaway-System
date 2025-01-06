@@ -1,3 +1,3 @@
 #!bin/bash
-git push origin main
-git push github main
+git push origin master
+git push github master
