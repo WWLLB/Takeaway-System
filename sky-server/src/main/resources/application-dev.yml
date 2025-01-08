@@ -6,3 +6,9 @@ sky:
     database: sky_take_out
     username: root
     password: 731553053
+
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tEdxuEqdbf6B7HrJGcq
+    access-key-secret: tdcawyx5QpOUq7UfuNVR0oG9aFS17J
+    bucket-name: web-wllb-tlias
