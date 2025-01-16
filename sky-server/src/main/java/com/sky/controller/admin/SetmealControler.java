@@ -41,6 +41,8 @@ public class SetmealControler {
          * @param setmealPageQueryDTO
          * @return
          */
+        @GetMapping("/page")
+        @ApiOperation("分页查询")
         public Result<PageResult> page(SetmealPageQueryDTO setmealPageQueryDTO){
                 PageResult pageResult = setmealService.pageQuery(setmealPageQueryDTO);
                 return Result.success(pageResult);
@@ -62,6 +64,8 @@ public class SetmealControler {
          * @param id
          * @return
          */
+        @GetMapping("/{id}")
+        @ApiOperation("根据id查询套餐")
         public Result<SetmealVO> getById(@PathVariable Long id){
                 SetmealVO setmealVO = setmealService.getByIdWithDish(id);
                 return Result.success(setmealVO);
@@ -72,6 +76,8 @@ public class SetmealControler {
          * @param setmealDTO
          * @return
          */
+        @PutMapping
+        @ApiOperation("修改套餐")
         public Result update(@PathVariable SetmealDTO setmealDTO){
             setmealService.update(setmealDTO);
             return Result.success();
